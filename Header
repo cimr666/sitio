@@ -1,0 +1,43 @@
+const e = React.createElement;
+
+class Header extends from React.Component
+{
+    constructor(props)
+    {
+        super(props);
+
+    }
+
+    render()
+    {
+        return
+        (
+            <header>
+                <div>
+                    <h1> Menú de opciones</h1>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>>
+                </div>  
+
+
+            </header>
+        )
+
+    }
+
+
+}
+
+
+document.querySelectorAll('.cabecera')
+  .forEach(domContainer => {
+    // Read the comment ID from a data-* attribute.
+    const commentID = parseInt(domContainer.dataset.commentid, 10);
+    ReactDOM.render(
+      e(Header, { commentID: commentID }),
+      domContainer
+    );
+  });
